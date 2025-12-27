@@ -16,8 +16,8 @@ object connect(int port)
         mixed err;
         if (port == 5555)
         {
-                set_encoding("GBK");
-        }
+                set_encoding("UTF-8");
+       	}
         err = catch (login_ob = new (LOGIN_OB));
 
         if (err)

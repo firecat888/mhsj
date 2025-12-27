@@ -102,6 +102,8 @@ private void encoding(string arg, object ob)
 		set_encoding("GBK");
 	else if (arg[0..0] == "b" || arg[0..0] == "B")
 		set_encoding("big5");
+	else
+		set_encoding("UTF-8");  // 默认使用 UTF-8
 
    ip_name = query_ip_name(ob);
    ip_number = query_ip_number(ob);
